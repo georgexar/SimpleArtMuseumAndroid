@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/room3bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Room3Activity">
+
+    <ImageView
+        android:id="@+id/descriptionpaper"
+        android:layout_width="316dp"
+        android:layout_height="379dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/changepaper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/descriptionpaper" />
+
+    <EditText
+        android:id="@+id/descriptionText"
+        android:layout_width="251dp"
+        android:layout_height="325dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/descriptionpaper"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionpaper"
+        app:layout_constraintStart_toStartOf="@+id/descriptionpaper"
+        app:layout_constraintTop_toTopOf="@+id/descriptionpaper" />
+
+    <ImageView
+        android:id="@+id/picturechanger"
+        android:layout_width="350dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionpaper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dali" />
+
+    <Button
+        android:id="@+id/changepaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Γύρνα σελίδα..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+</androidx.constraintlayout.widget.ConstraintLayout>
